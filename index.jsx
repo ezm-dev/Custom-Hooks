@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Menu from './src/components/Menu'
-// import Menu from './src/components/Menu/index'
+import Menu from './src/Components/Menu'
+
 
 function App() {
     return( 
