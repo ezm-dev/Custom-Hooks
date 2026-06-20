@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Menu from './src/Components/Menu'
+import Menu from './src/Components/Menu/index'
 
 
 function App() {
     return( 
-        <Menu>
+        
+        <Menu onOpen={()=>console.log("Opened/Closed....")}>
+            
             <Menu.Button>Menu</Menu.Button>
             <Menu.Dropdown>
                 <Menu.MenuItem>Home</Menu.MenuItem>

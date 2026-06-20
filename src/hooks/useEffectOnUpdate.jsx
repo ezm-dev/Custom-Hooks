@@ -5,7 +5,7 @@ export default function useEffectOnUpdate(effectFunction,deps){
 const isInitialMount = React.useRef(true)
 
 React.useEffect(()=>{
-    if(isInitialMount.curretnt){
+    if(isInitialMount.current){
         isInitialMount.current = false
     }else{
         effectFunction()
